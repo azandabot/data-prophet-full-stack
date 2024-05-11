@@ -1,0 +1,884 @@
+.text-spaced {
+    letter-spacing: 0.35em; 
+}
+
+.left {
+    padding: 20px;
+    position: relative; /* Add position relative */
+    height: 100vh;
+    flex-shrink: 0;
+    width: 300px;
+    display: flex;
+    color: #fff !important;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/mcd_landing_background.png);
+    filter: blur(10px); /* Adjust the blur value as needed */
+    z-index: -1; /* Move the pseudo-element behind the content */
+}
+.text-purple {
+    color: var(--bs-orange);        
+}
+
+
+.card-img { 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60px;
+}
+
+.form-control-custom {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: solid 1px var(--grey);
+}
+
+.switchtab {
+    background-color: var(--background);
+    padding: 10px;
+    width: 100%;
+    border-bottom: .1rem solid var(--grey);
+}
+
+.form-fs {
+    font-size: .82rem !important;
+}
+
+span.badge {
+    font-size: 0.85em !important;
+}
+
+.bg-purple-red {
+    background: url(../../assets/images/mcd_landing_background.png);
+    padding: 2.3rem;
+}
+
+.breadcrumb-title {
+    background-color: var(--background);
+
+    padding: 10px;
+
+    border: 1px solid var(--grey);
+    width: 100%;
+}
+
+.pagefilter {
+    background-color: var(--background);
+
+    padding: 10px;
+
+    border-bottom: 1px solid var(--grey);
+    width: 100%;
+
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#tblAssessments tbody td {
+    padding: 12px;
+    font-size: 15px;
+}
+
+#tblAssessments tbody tr {
+    font-size: 13px; 
+}
+
+th {
+    font-weight: lighter;
+}
+
+.pagination {
+    --bs-pagination-disabled-bg: var(--bs-light-bg) !important;
+}
+
+div .pagination {
+    margin-top: .90rem !important;
+}
+
+
+.btn-high {
+    height: 60px;
+}
+
+.btn-medium {
+    float: right;
+}
+
+.highlight-row {
+    --bs-table-bg: #F5FAFF;
+}
+
+tbody tr span,
+tbody td {
+    color: var(--bs-gray-700) !important;
+}
+
+.form-custom {
+    margin: 20px 20px;
+    background: var(--background);
+    border: solid 1px var(--grey);
+    
+}
+
+.form-custom table {
+    border-radius: 10px;
+}
+
+.breadcrumb-title h1 {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: var(--light-grey);
+}
+
+.breadcrumb-title .active {
+    font-size: 14px;
+    margin-top:6px;
+    color: #000000;
+}
+
+.page-description {
+    font-size: .91rem;
+    margin-top: 0.2rem;
+}
+
+.breadcrumb-title .slash {
+    color: var(--light-grey);
+}
+
+
+.brand{
+    padding: 10px;
+    background: linear-gradient(to left, #fff 68%, #CE2A1D 11%);
+    border-radius: 20px;
+}
+
+.brand a {
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.brand-1{
+
+    width: 80px;
+
+    animation: spin 8s linear infinite;
+
+}
+
+.dark-mode .nav-icon i {
+    color: #fff;
+}
+
+.crew-profile-picture  {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.brand .logo,
+
+.topic .logo {
+
+    width: 53px;
+
+    flex-shrink: 0;
+
+
+}
+
+
+
+
+
+@keyframes spin {
+
+    from{
+
+        rotate: 0deg;
+
+    }
+
+    to{
+
+        rotate: 360deg;
+
+    }
+
+}
+
+
+
+.brand h1 {
+    font-family: 'Vigril' !important;
+
+    color: var(--bs-danger);
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    font-weight: 800;
+
+    margin-left: 15px;
+
+}
+
+
+
+.brand .user-menu{
+
+    width: 90px;
+
+    border: 1px solid var(--grey);
+
+    border-radius: 60px;
+
+    padding: 3px;
+
+    margin-left: auto;
+
+    display: none;
+
+}
+
+
+
+.brand .user-profile{
+
+    width: 40px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    aspect-ratio: 1/1;
+
+}
+
+
+
+.brand .user-profile:hover,
+
+.brand .mobile-menu:hover{
+
+    border-color: var(--primary);
+
+    border: 1px solid var(--primary);
+
+    background-color: rgb(164, 133, 212, 0.2);
+
+}
+
+
+
+.brand .mobile-menu{
+
+    width: 40px;
+
+    flex-shrink: 0;
+
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+
+    color: var(--text);
+
+    font-size: 25px;
+
+}
+
+
+
+
+
+.left .navigation{
+
+    flex-direction: column;
+
+    height: 100%;
+
+}
+
+
+
+
+
+.left nav{
+
+    letter-spacing: 0.65px;
+  
+      
+    border-radius: 10px;
+
+    padding: 10px 0px;
+
+
+    flex-shrink: 0;
+
+    width: 100%;
+
+    color: #fff !important;
+
+    overflow: hidden;
+
+}
+
+
+
+nav .nav{
+
+    padding: 13px 20px;
+
+    position: relative;
+
+    cursor: pointer;
+
+}
+
+
+
+nav .theme-tab{
+
+    display: none;
+
+}
+
+.card-ontop {
+    margin-top: -14px;
+}
+
+.card-icon {
+    background: #FAC20A;
+    padding: 6px; 
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bg-beta {
+    font-family: 'Vigril' !important;
+    background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity));
+    background-image: radial-gradient(at 17% 29%, hsla(313,94%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 96% 81%, hsla(51,94%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 10% 76%, hsla(289,94%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 26%, hsla(142,94%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 70% 35%, hsla(156,94%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(193,94%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(293,94%,93%,1) 0px, transparent 50%);
+}
+
+
+
+
+nav .active-nav h1{
+    font-weight: 800;
+}
+.nav.flex-left.active-nav h1 {
+    color: #CE2A1D !important;
+}
+
+.nav.flex-left.active-nav:hover i ,
+.nav.flex-left.active-nav:hover {
+    color: inherit;
+}
+
+.nav.flex-left.active-nav {
+    color: #CE2A1D !important;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff 88%, #CE2A1D 50%);
+}
+
+
+.nav.flex-left:hover {
+    color: var(--heading);
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.92;
+}
+
+
+.nav .nav-icon{
+
+    font-size: 1.2rem;
+
+    flex-shrink: 0;
+
+}
+
+
+
+.nav .active-nav .nav-icon{
+
+    color: var(--primary);
+
+}
+
+.text-performance-tracker {
+    color: var(--bs-form-invalid-border-color) !important;
+}
+
+.nav h1{
+
+    font-family: 'Plus Jakarta Sans' !important;
+
+    font-size: 14px;
+
+    color: #fff;
+
+    margin-left: 20px;
+
+
+}
+
+
+
+nav .nav:hover h1{
+
+    color: var(--heading);
+
+}
+
+
+
+
+
+
+
+.left .profile{
+
+    border-radius: 10px;
+
+    padding: 0px 10px 0px 10px;
+
+
+    width: 100%;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    margin: auto auto 0px auto;
+
+    background-color: var(--background);
+
+}
+
+
+
+
+
+.left .profile .profile-picture{
+
+    flex-shrink: 0;
+
+    width: 45px;
+
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+}
+
+
+
+.left .profile .user-details{
+
+    margin-left: 15px;
+
+}
+
+
+
+.left .profile h1{
+
+    font-size: 13px;
+
+    color: var(--heading);
+
+    font-weight: 700;
+
+}
+
+
+
+.left .profile p{
+
+    font-size: 10px;
+
+    margin-top: 1px;
+
+    font-weight: 600;
+
+    color: var(--text);
+
+    font-family: 'Assistant', sans-serif;
+
+}
+
+
+
+.left .profile button{
+
+    width: 35px;
+
+    flex-shrink: 0;
+
+    color: var(--heading);
+
+    font-size: 18px;
+
+    background-color: transparent;
+
+    margin-left: auto;
+
+}
+
+.btn-primary-mcd {
+    background: #e04141 !important;
+    border: none !important;
+    color: #fff !important;
+  }
+  
+  .btn-primary-mcd:hover {
+    transform: rotate(360deg);
+    transform: scale(1.01);
+    background: #e03131 !important;
+  }
+
+
+
+.center{
+
+    width: 100%;
+
+    height: 100vh;
+
+    padding: 20px 30px;
+
+    overflow-y: auto;
+
+    z-index: -1;
+
+    background: var(--bs-light-bg-subtle);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+
+
+    .brand,
+
+    nav,
+
+    .left,
+
+    .left .profile{
+
+        width: fit-content!important;
+
+    }
+
+    .left .profile  {
+        padding: 3px 5px 3px 5px;
+    }
+
+    
+
+    .brand h1,
+
+    nav .nav h1,
+
+    .left .profile .user-details,
+
+    .left .profile .more-options,
+
+    .left .profile button{
+
+        display: none;
+
+    }
+
+    
+
+    .left{
+
+        width: fit-content;
+
+    }
+
+
+
+    nav .theme-tab{
+
+        display: flex!important;
+
+    }
+
+    
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+
+
+
+
+    .left{
+
+        position: absolute;
+
+        z-index: 10;
+
+        height: fit-content;
+
+        width: 100%!important;
+
+        background-color: transparent!important;
+
+        backdrop-filter: unset!important;
+
+    }
+
+    
+
+    .left .navigation{
+
+        position: fixed;
+
+        left: 0;
+
+        bottom: -100%;
+
+        transition: 0.5s;
+
+        overflow: hidden;
+
+        width: 100%;
+
+        height: 100%!important;
+
+        z-index: 10;
+
+    }
+
+    
+
+    .left .navigation .close-nav{
+
+        width: 100%;
+
+        display: block;
+
+        height: 100%;
+
+    }
+
+    
+
+
+
+    @keyframes dark{
+
+        from{
+
+            background-color: rgba(0,0,0,0.0);
+
+        }
+
+        to{
+
+            background-color: rgba(0,0,0,0.65);
+
+        }
+
+    }
+
+    
+
+    
+
+    .brand{
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        z-index: 10;
+
+        padding: 12px 15px;
+
+        border: unset!important;
+
+        border-radius: 0px;
+
+        background-color: var(--background)!important;
+
+        backdrop-filter: unset;
+
+        width: 100%!important;
+
+        box-shadow: 0px 1px 12px rgba(0,0,0,0.2);
+
+    }
+
+    
+
+    
+
+    .brand .logo{
+
+        width: 47px;
+
+    }
+
+    
+
+    .brand h1{
+
+        font-size: 16px;
+
+    }
+
+    
+
+    .brand .user-menu{
+
+        display: flex;
+
+    }
+
+    
+
+    
+
+    .left nav{
+        border-radius: 10px;
+        padding: 10px 0px;
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    
+
+    .left nav:hover{
+
+        border-color: transparent!important;
+
+    }
+
+    
+
+    .left .profile{
+
+        display: none;
+
+    }
+
+    
+
+    nav .nav h1{
+
+        display: block;
+
+        margin-left: 30px;
+
+    }
+
+    
+
+    .center{
+
+        padding: 80px 15px 20px 15px;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1800px) {
+
+    
+
+    main{
+
+        max-width: 1800px;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+    }
+
+    
+
+}
+
+    

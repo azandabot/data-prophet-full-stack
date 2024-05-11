@@ -1,0 +1,258 @@
+
+* {
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Vigril' !important;
+
+    letter-spacing: 0.65px;
+
+    user-select: none;
+}
+
+.list-content {
+    text-align: center !important;
+    align-items: center !important;
+    display: inline-block;
+}
+
+.bar {
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+
+.bar-segment {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+.segment {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.segment span {
+    display: block;
+    width: 10%;
+    margin-right: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.card {
+    padding: 0;
+
+}
+
+
+.btn {
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.btn.selected {
+    background-color: #dc3545;
+    color: white;
+}
+
+path {
+    fill: #fff !important;
+    stroke: grey;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+list-content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+list-content li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.limap {
+    font-size: 30px !important;
+
+}
+
+.limap::before {
+    color: #fff !important;
+    text-align: center !important;
+}
+
+.limap::marker {
+    display: none;
+    content: "" !important;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul {
+    padding-left: 0px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.list-unstyled::before {
+    margin-bottom: 10px;
+    position: relative;
+    display: none;
+    list-style: none;
+}
+
+li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20%;
+    /* Adjust the
+    distance from the left */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Updated to center the bullet vertically */
+    width: 30px;
+    /* Adjust the bullet size */
+    height: 30px;
+    /* Adjust the bullet size */
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+li:nth-child(1)::before {
+    border: 3px solid green;
+    /* Set the color for the first bullet */
+}
+
+li:nth-child(2)::before {
+    border: 3px solid orange;
+    /* Set the color for the second bullet */
+}
+
+li:nth-child(3)::before {
+    border: 3px solid #dc3545;
+    /* Set the color for the third bullet */
+}
+
+span {
+    font-size: 24px !important;
+    /* Adjust the
+    value as per your preference */
+}
+
+.grey-background {
+    background-color: #ccc !important;
+    padding: 5px;
+    margin: -5px;
+}
+
+.white-outline {
+    position: relative;
+    display: inline-block;
+}
+
+.white-outline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+.btn.btn-danger {
+    background-color: #dc3545;
+}
+
+.text-white {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #101010;
+}
+
+/* The page is split between map and sidebar - the sidebar gets 1/3, map
+  gets 2/3 of the page. You can adjust this to your personal liking. */
+.map {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.listing {
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.listing:hover {
+    background-color: #efefef;
+}
+
+.mapboxgl-map {
+    overflow: visible !important;
+}
